@@ -11,9 +11,18 @@ const Hero = () => {
           SHOES.
         </p>
       </div>
+
       <div className="hero-btn">
         <button>Shop now</button>
         <button>Category</button>
+      </div>
+
+      <div className="shopping">
+        <p>Also Available On</p>
+        <div className="brand-icons">
+            <img src="./images/flipkart.png" alt="logo_flipkart" />
+            <img src="./images/amazon.png" alt="logo_amazon" />
+        </div>
       </div>
       <div className="hero-image"></div>
     </main>
