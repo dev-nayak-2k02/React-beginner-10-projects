@@ -11,6 +11,10 @@ const Hero = () => {
           SHOES.
         </p>
       </div>
+      <div className="hero-btn">
+        <button>Shop now</button>
+        <button>Category</button>
+      </div>
       <div className="hero-image"></div>
     </main>
   );
