@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <main className="hero">
+    <main className="hero container">
       <div className="hero-content">
         <h1>YOUR FEET DESERVE THE BEST</h1>
         <p>
