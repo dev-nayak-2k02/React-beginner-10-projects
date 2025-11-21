@@ -4,7 +4,7 @@ function App() {
     <div>
       <nav>
         <div className="logo">
-          <img src="" alt="" />
+          <img src="./images/brand_logo.png" alt="" />
         </div>
       </nav>
     </div>
