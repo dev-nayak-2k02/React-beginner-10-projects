@@ -57,3 +57,8 @@ nav ul{
   font-weight: 600;
   color: var(--gray);
 }
+
+.hero-btn {
+  display: flex;
+  gap: 40px;
+}
