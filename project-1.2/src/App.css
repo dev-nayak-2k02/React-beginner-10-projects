@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     height: max-content;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 90;
     height: 50px;
     overflow: hidden;
@@ -25,7 +25,7 @@ body {
     border-radius: 40px;
     background-color: #e0eef7;
     margin: 0 auto;
-    transform: translate(4%, 30%);
+    transform: translate(100%, 50%);
     border: 1px solid #acdfff;
 }
 
@@ -68,7 +68,46 @@ main {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 150px;
     gap: 20px;
+    
+}
+
+main h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+    color: #6614d2;
+    letter-spacing: 1px;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+main button {
+    background-color: #fcfeff;
+    border: 1px solid #fcfeff;
+    padding: 20px 55px;
+    border-radius: 62px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+    color: #9071b9;
+}
+
+main p {
+    text-align: center;
+}
+
+main img {
+    height: 140px;
+    width: 140px;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: 10px solid #acdfff;
 }
