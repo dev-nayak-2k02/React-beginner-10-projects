@@ -61,3 +61,14 @@ ul button {
     color: #9071b9;
     padding-top: 4px;
 }
+
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
