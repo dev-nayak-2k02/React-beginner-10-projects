@@ -14,3 +14,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
 }
+
+.main-nav-section .logo img {
+    height: 100px;
+    width: 100px;
+}
