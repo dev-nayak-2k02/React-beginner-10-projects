@@ -5,17 +5,59 @@
     padding: 0;
 }
 
-nav {
-    height: max-content;
-    width: max-content;
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: #d5e8f4;
 }
 
 .main-nav-section {
+    padding: 4px 23px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: max-content;
+    align-items: center;
+    position: sticky;
+    top: 90;
+    height: 50px;
+    overflow: hidden;
+    width: 30%;
+    border-radius: 40px;
+    background-color: #e0eef7;
+    margin: 0 auto;
+    transform: translate(4%, 30%);
+    border: 1px solid #acdfff;
 }
 
 .main-nav-section .logo img {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 80px;
+    border: none;
+    overflow: hidden;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #9071b9;
+}
+
+ul button {
+    height: 24px;
+    width: 24px;
+    border-radius: 15px;
+    border: none;
+    background-color: #acdfff;
+    color: #9071b9;
+    padding-top: 4px;
 }
