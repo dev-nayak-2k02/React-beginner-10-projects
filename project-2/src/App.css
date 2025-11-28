@@ -18,17 +18,3 @@ body {
   margin: 0 auto;
 }
 
-nav {
-  padding: 0 8px;
-  height: 72px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  gap: 24px;
-  font-weight: 500;
-}
