@@ -14,6 +14,7 @@
 .outline_btn {
     border: 1px solid black;
     color: black;
+    background-color: white;
     padding: 18px 10px;
     min-width: 220px;
     border-radius: 5px;

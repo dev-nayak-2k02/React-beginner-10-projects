@@ -15,7 +15,11 @@ const ContactForm = () => {
           />
           <Button text="VIA CALL" icon={<MdCall fontSize="24px" />} />
         </div>
-        <Button text="VIA EMAIL FORM" icon={<HiMail fontSize="24px" />} />
+        <Button
+          isOutline={true}
+          text="VIA EMAIL FORM"
+          icon={<HiMail fontSize="24px" />}
+        />
       </div>
       <div className={styles.contact_image}></div>
     </section>
