@@ -3,6 +3,7 @@ import styles from "./ContactForm.module.css";
 import Button from "../Button/Button";
 import { MdCall } from "react-icons/md";
 import { MdMessage } from "react-icons/md";
+import { HiMail } from "react-icons/hi";
 const ContactForm = () => {
   return (
     <section className={styles.container}>
@@ -14,6 +15,7 @@ const ContactForm = () => {
           />
           <Button text="VIA CALL" icon={<MdCall fontSize="24px" />} />
         </div>
+        <Button text="VIA EMAIL FORM" icon={<HiMail fontSize="24px" />} />
       </div>
       <div className={styles.contact_image}></div>
     </section>
