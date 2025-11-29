@@ -20,6 +20,7 @@ const ContactForm = () => {
           text="VIA EMAIL FORM"
           icon={<HiMail fontSize="24px" />}
         />
+
         <form>
           <div className={styles.form_control}>
             <label htmlFor="name">Name</label>
@@ -33,11 +34,20 @@ const ContactForm = () => {
 
           <div className={styles.form_control}>
             <label htmlFor="text">text</label>
-            <textarea  name="text" />
+            <textarea name="text" rows='8'/>
+          </div>
+
+          <div style={{
+            display: 'flex',
+            justifyContent: 'end'
+          }}>
+            <Button text="SUBMIT BUTTON" />
           </div>
         </form>
       </div>
-      <div className={styles.contact_image}></div>
+      <div className={styles.contact_image}>
+        <img src="./" alt="" />
+      </div>
     </section>
   );
 };
