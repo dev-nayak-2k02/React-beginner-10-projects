@@ -4,8 +4,9 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <button className={styles.primary}>
-        <MdMessage />
+    <button className={styles.primary_btn}>
+        <MdMessage fontSize='24px'/>
+        VIA SUPPORT CHAT
     </button>
   )
 }
