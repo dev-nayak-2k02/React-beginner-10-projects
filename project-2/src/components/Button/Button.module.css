@@ -9,3 +9,16 @@
     justify-content: center;
     gap: 8px;
 }
+
+.outline_btn {
+    background-color: black;
+    border: 1px solid black;
+    color: black;
+    padding: 18px 10px;
+    min-width: 220px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
