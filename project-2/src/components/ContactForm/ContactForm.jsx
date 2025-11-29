@@ -4,9 +4,7 @@ const ContactForm = () => {
   return (
     <section className={styles.container}>
         <div className={styles.contact_form}></div>
-        <div className={styles.contact_image}>
-
-        </div>
+        <div className={styles.contact_image}></div>
     </section>
   )
 }
