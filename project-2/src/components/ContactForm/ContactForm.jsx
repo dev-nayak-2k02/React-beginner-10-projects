@@ -21,10 +21,20 @@ const ContactForm = () => {
           icon={<HiMail fontSize="24px" />}
         />
         <form>
-            <div className={styles.form_control}>
-                <label htmlFor="name">Name</label>
-          <input type="text" name="name"/>
-            </div>
+          <div className={styles.form_control}>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div className={styles.form_control}>
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" />
+          </div>
+
+          <div className={styles.form_control}>
+            <label htmlFor="text">text</label>
+            <textarea  name="text" />
+          </div>
         </form>
       </div>
       <div className={styles.contact_image}></div>
