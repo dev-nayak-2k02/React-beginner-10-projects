@@ -4,9 +4,9 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <div>
+    <button className={styles.primary}>
         <MdMessage />
-    </div>
+    </button>
   )
 }
 
