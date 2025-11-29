@@ -1,4 +1,4 @@
-import styles from './'
+import styles from './ContactHeader.module.css'
 import React from 'react'
 
 const ContactHeader = () => {
