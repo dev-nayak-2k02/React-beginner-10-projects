@@ -6,6 +6,7 @@ import RollDice from "./RollDice";
 
 const GamePlay = () => {
   const [selectedNumber, setSelectedNumber] = useState();
+  const[currentDice, setCurrentDice] = useState(1);
   return (
     <MainContainer>
       <div className="top_section">
