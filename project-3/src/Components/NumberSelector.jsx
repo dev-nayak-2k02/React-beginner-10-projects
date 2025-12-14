@@ -6,7 +6,7 @@ const NumberSelector = () => {
 
   return (
     <NumberSelectorContainer>
-      <div>
+      <div className="flex">
         {arrNumber.map((value, i) => (
           <Box
             isSelected={value == selectedNumber}
@@ -17,6 +17,7 @@ const NumberSelector = () => {
           </Box>
         ))}
       </div>
+      <p style={{ fontSize: "24px", fontWeight: "800" }}>Select Number</p>
     </NumberSelectorContainer>
   );
 };
