@@ -16,7 +16,7 @@ const NumberSelector = ({ selectedNumber, setSelectedNumber }) => {
           </Box>
         ))}
       </div>
-      <p style={{ fontSize: "24px", fontWeight: "800" }}>Select Number</p>
+      <p>Select Number</p>
     </NumberSelectorContainer>
   );
 };
