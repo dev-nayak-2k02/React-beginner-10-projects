@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-const StartGame = () => {
+const StartGame = ({toggle}) => {
   return (
     <Container>
         <div>
@@ -9,7 +9,7 @@ const StartGame = () => {
         <div className='content'>
             <h1>DICE GAME</h1>
             <div>
-                <Button>Play Now</Button>
+                <Button onClick={toggle}>Play Now</Button>
             </div>
         </div>
     </Container>
