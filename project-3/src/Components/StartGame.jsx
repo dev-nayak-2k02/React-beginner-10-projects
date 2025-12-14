@@ -8,7 +8,9 @@ const StartGame = () => {
         </div>
         <div className='content'>
             <h1>DICE GAME</h1>
-            <Button>Play Now</Button>
+            <div>
+                <Button>Play Now</Button>
+            </div>
         </div>
     </Container>
   )
@@ -28,7 +30,10 @@ const Container = styled.div`
             font-size: 96px;
             white-space: nowrap;
         }
-        
+        div {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 `
 const Button = styled.button`
@@ -40,10 +45,13 @@ const Button = styled.button`
     border: none;
     font-size: 16px;
     border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.3s background ease-in;
 
     &:hover {
         background-color: white;
         border: 1px solid black;
         color: black;
+        transition: 0.3s background ease-in;
     }
 `
