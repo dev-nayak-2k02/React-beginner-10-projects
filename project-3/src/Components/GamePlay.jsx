@@ -3,7 +3,7 @@ import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
 import RollDice from "./RollDice";
-import { Button } from "../Styled/Button";
+import { Button, OutlineButton } from "../Styled/Button";
 
 const GamePlay = () => {
   const [score, setScore] = useState(0);
@@ -35,6 +35,10 @@ const GamePlay = () => {
 
   };
 
+  const resetScore = () => {
+    setScore(0)
+  }
+
   return (
     <MainContainer>
       <div className="top_section">
@@ -48,8 +52,8 @@ const GamePlay = () => {
       </div>
       <RollDice currentDice={currentDice} rollDice={rollDice} />
       <div className="btns">
-        <Button>Reset</Button>
-        <Button></Button>
+        <OutlineButton onClick={resetScore}>Reset</OutlineButton>
+        {/* <Button></Button> */}
       </div>
     </MainContainer>
   );
@@ -65,5 +69,15 @@ const MainContainer = styled.main`
     display: flex;
     justify-content: space-between;
     align-items: end;
+  }
+  .btns{
+    gap: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    
   }
 `;
