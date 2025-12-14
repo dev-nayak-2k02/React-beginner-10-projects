@@ -3,6 +3,7 @@ import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
 import RollDice from "./RollDice";
+import { Button } from "../Styled/Button";
 
 const GamePlay = () => {
   const [score, setScore] = useState(0);
@@ -46,6 +47,10 @@ const GamePlay = () => {
         />
       </div>
       <RollDice currentDice={currentDice} rollDice={rollDice} />
+      <div className="btns">
+        <Button>Reset</Button>
+        <Button></Button>
+      </div>
     </MainContainer>
   );
 };
