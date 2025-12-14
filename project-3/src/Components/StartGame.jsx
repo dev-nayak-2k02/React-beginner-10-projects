@@ -9,7 +9,7 @@ const StartGame = ({toggle}) => {
         <div className='content'>
             <h1>DICE GAME</h1>
             <div>
-                <Button onClick={toggle}>Play Now</Button>
+                <Button onClick={toggle }>Play Now</Button>
             </div>
         </div>
     </Container>
