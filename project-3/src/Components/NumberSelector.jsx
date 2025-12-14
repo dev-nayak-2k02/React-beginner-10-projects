@@ -24,7 +24,12 @@ const NumberSelector = () => {
 
 export default NumberSelector;
 
-const NumberSelectorContainer = styled.div``;
+const NumberSelectorContainer = styled.div`
+    .flex {
+        display: flex;
+        gap: 24px;
+    }
+`;
 
 const Box = styled.div`
   height: 72px;
