@@ -9,7 +9,7 @@ const App = () => {
   ]
 
   const[heroCount, setHeroCount] = useState(2)
-  const[playStatus, setPlayStatus] = useState(true)
+  const[playStatus, setPlayStatus] = useState(false)
   return (
     <div>
       <Background heroCount={heroCount} playStatus={playStatus}/>
