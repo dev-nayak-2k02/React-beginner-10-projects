@@ -9,6 +9,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+  body {
+    background-color: #323334;
+    color: white;
+    min-height: 100vh;
+  }
 `
 
 ReactDOM.createRoot(document.getElementById("root")).render(

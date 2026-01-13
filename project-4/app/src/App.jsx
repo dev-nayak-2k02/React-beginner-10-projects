@@ -1,24 +1,59 @@
-import styled from 'styled-components'
-import React from 'react'
+import styled from "styled-components";
+import React from "react";
 const App = () => {
   return (
-    <MainContainer>
+    <Container>
       <TopContainer>
-        <div className='logo'>
+        <div className="logo">
           <img src="/logo.svg" alt="" />
         </div>
 
         <div className="search">
-          <input type="text" placeholder='Search Food....'/>
+          <input type="text" placeholder="Search Food...." />
         </div>
       </TopContainer>
-    </MainContainer>
-  )
-}
 
-export default App
+      <FilterContainer>
+        <Button>All</Button>
+        <Button>Breakfast</Button>
+        <Button>Lunch</Button>
+        <Button>Dinner</Button>
+      </FilterContainer>
+    </Container>
+  );
+};
 
-const MainContainer = styled.div``
+export default App;
+
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
 const TopContainer = styled.div`
-  
-`
+  min-height: 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+
+  .search {
+    input {
+      background-color: transparent;
+      border: 1px solid red;
+      color: white;
+      border-radius: 5px;
+      height: 40px;
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+`;
+const FilterContainer = styled.section`
+
+`;
+
+const Button = styled.button`
+  background: #ff4343;
+  border-radius: 5px;
+  padding: 6px 12px;
+`;
