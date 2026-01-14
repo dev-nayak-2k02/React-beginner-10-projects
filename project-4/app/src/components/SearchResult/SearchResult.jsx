@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BASE_URL } from "../../App";
 const SearchResult = ({ data }) => {
   return (
     <FoodCardContainer>
@@ -7,7 +8,14 @@ const SearchResult = ({ data }) => {
         {data?.map((food) => (
           <FoodCard key={food.name}>
             <div className="food_image">
-                <img src={food.image} alt="" />
+                <img src={BASE_URL + food.image} alt="" />
+            </div>
+            <div className="food_info">
+                <div className="info">
+                    <h3>{food.name}</h3>
+                    <p>{food.text}</p>
+                </div>
+                <Button></Button>
             </div>
           </FoodCard>
         ))}
