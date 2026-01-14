@@ -9,7 +9,6 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-
   useEffect(() => {
     const fetchFoodData = async () => {
       setLoading(true);
@@ -30,26 +29,28 @@ const App = () => {
   if (loading) return <div>loading....</div>;
 
   return (
-    <Container>
-      <TopContainer>
-        <div className="logo">
-          <img src="/logo.svg" alt="" />
-        </div>
+    <>
+      <Container>
+        <TopContainer>
+          <div className="logo">
+            <img src="/logo.svg" alt="" />
+          </div>
 
-        <div className="search">
-          <input type="text" placeholder="Search Food...." />
-        </div>
-      </TopContainer>
+          <div className="search">
+            <input type="text" placeholder="Search Food...." />
+          </div>
+        </TopContainer>
 
-      <FilterContainer>
-        <Button>All</Button>
-        <Button>Breakfast</Button>
-        <Button>Lunch</Button>
-        <Button>Dinner</Button>
-      </FilterContainer>
+        <FilterContainer>
+          <Button>All</Button>
+          <Button>Breakfast</Button>
+          <Button>Lunch</Button>
+          <Button>Dinner</Button>
+        </FilterContainer>
+      </Container>
 
-      <SearchResult data={data}/>
-    </Container>
+      <SearchResult data={data} />
+    </>
   );
 };
 
@@ -99,4 +100,3 @@ export const Button = styled.button`
     background: #ff2f2f;
   }
 `;
-
