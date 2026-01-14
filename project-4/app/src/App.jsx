@@ -1,31 +1,33 @@
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import SearchResult from "./components/SearchResult/SearchResult";
 
-const BASE_URL = 'http://localhost:9000';
-
+const BASE_URL = "http://localhost:9000/";
 
 const App = () => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  const [data, setData] = useState(null)
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
 
-  const fetchFoodData = async () => {
-    setLoading(true)
-    try {
-      const response = await fetch(BASE_URL);
-      const jsonData = await response.json();
-      
-      setData(jsonData);
-      setLoading(false);
-    } catch (error) {
-      setError('unable to fetch data')
-    }
-  };
-  fetchFoodData();
+  useEffect(() => {
+    const fetchFoodData = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(BASE_URL);
+        const jsonData = await response.json();
 
-  if(error) return <div>{error}</div>
-  if(loading) return <div>loading....</div>
+        setData(jsonData);
+        setLoading(false);
+      } catch (error) {
+        setError("unable to fetch data");
+      }
+    };
+    fetchFoodData();
+  }, []);
+
+  if (error) return <div>{error}</div>;
+  if (loading) return <div>loading....</div>;
 
   return (
     <Container>
@@ -46,9 +48,7 @@ const App = () => {
         <Button>Dinner</Button>
       </FilterContainer>
 
-      <FoodCardContainer>
-        <FoodCards></FoodCards>
-      </FoodCardContainer>
+      <SearchResult data={data}/>
     </Container>
   );
 };
@@ -95,17 +95,8 @@ const Button = styled.button`
   color: white;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     background: #ff2f2f;
   }
 `;
 
-const FoodCardContainer = styled.section`
-  background-image: url('/bg.png');
-  background-size: cover;
-  height: calc(100vh - 210px);
-`;
-
-const FoodCards = styled.div`
-
-`
