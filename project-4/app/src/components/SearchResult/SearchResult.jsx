@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BASE_URL } from "../../App";
+import { BASE_URL, Button } from "../../App";
 const SearchResult = ({ data }) => {
   return (
     <FoodCardContainer>
@@ -15,7 +15,7 @@ const SearchResult = ({ data }) => {
                     <h3>{food.name}</h3>
                     <p>{food.text}</p>
                 </div>
-                <Button></Button>
+                <Button>${food.price.toFixed(2)}</Button>
             </div>
           </FoodCard>
         ))}
@@ -33,4 +33,6 @@ const FoodCardContainer = styled.section`
 `;
 
 const FoodCards = styled.div``;
-const FoodCard = styled.div``;
+const FoodCard = styled.div`
+    
+`;
